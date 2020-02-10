@@ -2,11 +2,15 @@ package com.practice.sikulix;
 
 import java.awt.AWTException;
 import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.sikuli.script.FindFailed;
+import org.sikuli.script.Key;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 
@@ -25,10 +29,23 @@ public class SikuliDemo {
 		//screen.wait(userId,2);
 		screen.type(userId,"mngr243120");
 		screen.type(password,"udAhydy");
-		screen.click(login);
+		
+		Actions action=new Actions(driver);
+		action.sendKeys(Key.TAB).perform();;
+		action.sendKeys(Keys.ENTER).perform();;
+		
+		/*Robot robot=new Robot();
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+		*/
+		Thread.sleep(5000);
+		
+		/*screen.click(login);
 		TakeRobotScreenCapture.TakeARobotScreenCapture();
 		Thread.sleep(2000);
-		TakeRobotScreenCapture.ScreenwithDefault(driver);
+		TakeRobotScreenCapture.ScreenwithDefault(driver);*/
 		driver.quit();
 	}
 
