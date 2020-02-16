@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28414" started-at="2020-02-16T00:47:42 IST" finished-at="2020-02-16T00:48:11 IST">
+  <suite name="Default suite" duration-ms="43052" started-at="2020-02-16T16:13:11 IST" finished-at="2020-02-16T16:13:54 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28414" started-at="2020-02-16T00:47:42 IST" finished-at="2020-02-16T00:48:11 IST">
+    <test name="Default test" duration-ms="43052" started-at="2020-02-16T16:13:11 IST" finished-at="2020-02-16T16:13:54 IST">
       <class name="com.practice.calender.CalenderHandle">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.practice.calender.CalenderHandle@4493d195]" name="Setup" is-config="true" duration-ms="26394" started-at="2020-02-16T00:47:42 IST" finished-at="2020-02-16T00:48:09 IST">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.practice.calender.CalenderHandle@4493d195]" name="Setup" is-config="true" duration-ms="26709" started-at="2020-02-16T16:13:11 IST" finished-at="2020-02-16T16:13:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="MainExection()[pri:0, instance:com.practice.calender.CalenderHandle@4493d195]" name="MainExection" duration-ms="1926" started-at="2020-02-16T00:48:09 IST" finished-at="2020-02-16T00:48:11 IST">
+        <test-method status="PASS" signature="MainExection()[pri:0, instance:com.practice.calender.CalenderHandle@4493d195]" name="MainExection" duration-ms="9510" started-at="2020-02-16T16:13:38 IST" finished-at="2020-02-16T16:13:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainExection -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.practice.calender.CalenderHandle@4493d195]" name="TearDown" is-config="true" duration-ms="1" started-at="2020-02-16T00:48:11 IST" finished-at="2020-02-16T00:48:11 IST">
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.practice.calender.CalenderHandle@4493d195]" name="TearDown" is-config="true" duration-ms="6596" started-at="2020-02-16T16:13:47 IST" finished-at="2020-02-16T16:13:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
