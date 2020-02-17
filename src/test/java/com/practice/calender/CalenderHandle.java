@@ -31,7 +31,7 @@ public class CalenderHandle {
 	}
 	@Test
 	public void MainExection() throws ParseException, InterruptedException {
-		 String Date="15/12/2020";
+		 String Date="12/09/2020";
 		 SimpleDateFormat sdate=new SimpleDateFormat("dd/MM/yy"); //Transfer to format 
 		 Date DateConvertion=sdate.parse(Date); //create the Date object using factory method & parse 
 		 System.out.println(DateConvertion);
@@ -48,15 +48,8 @@ public class CalenderHandle {
 		 System.out.println(indidpalyYear);
 		 System.out.println(inSyear);
 		
-		 if(indidpalyYear==inSyear) {
-			 while(!(driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText()).equals(sMon)) {
-				 System.out.println(driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText());
-	                              
-	               		driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
-	
-			 }
-		 }
-		 else if(indidpalyYear>inSyear) {
+		 
+		 if(indidpalyYear>inSyear) {
 			 while(indidpalyYear!=inSyear) {
 				 Thread.sleep(100);
 				 driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click();
@@ -66,13 +59,26 @@ public class CalenderHandle {
 				 
 			 }
 			 
-		 }else if(indidpalyYear<=inSyear) {
+		 }else if(indidpalyYear<inSyear) {
 			 while(indidpalyYear!=inSyear) {
 				 Thread.sleep(100);
 				 driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
 				 if((driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText()).equals(sMon)) {
 					 indidpalyYear++; 
 				 }
+			 }
+			 
+		 }
+		 else if(indidpalyYear==inSyear) {
+			 while(!(driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText()).equals(sMon) && !(driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText()).equals("January")) {
+	              Thread.sleep(150);                      
+				 driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-w']")).click();
+	
+			 }
+			 while(!(driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText()).equals(sMon) && !(driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText()).equals("December")) {
+				 Thread.sleep(150);                              
+				 driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
+	
 			 }
 			 
 		 }
