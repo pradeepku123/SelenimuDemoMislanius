@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.webtable.WebTable">
+      <class name="com.practice.databasetest.AcessDatabase">
         <methods>
-          <include name="MainExection"/>
-          <include name="TearDown"/>
-          <include name="Setup"/>
+          <include name="Testwork"/>
         </methods>
-      </class> <!-- com.practice.webtable.WebTable -->
+      </class> <!-- com.practice.databasetest.AcessDatabase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
