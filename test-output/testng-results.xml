@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1177" started-at="2020-02-19T16:43:14 IST" finished-at="2020-02-19T16:43:15 IST">
+  <suite name="Default suite" duration-ms="36587" started-at="2020-02-20T17:23:06 IST" finished-at="2020-02-20T17:23:42 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1177" started-at="2020-02-19T16:43:14 IST" finished-at="2020-02-19T16:43:15 IST">
-      <class name="com.practice.databasetest.AcessDatabase">
-        <test-method status="PASS" signature="Testwork()[pri:0, instance:com.practice.databasetest.AcessDatabase@4d41cee]" name="Testwork" duration-ms="1101" started-at="2020-02-19T16:43:14 IST" finished-at="2020-02-19T16:43:15 IST">
+    <test name="Default test" duration-ms="36587" started-at="2020-02-20T17:23:06 IST" finished-at="2020-02-20T17:23:42 IST">
+      <class name="com.practice.webelementtest.AllOneWebElementTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.practice.webelementtest.AllOneWebElementTest@1877ab81]" name="setUp" is-config="true" duration-ms="34978" started-at="2020-02-20T17:23:06 IST" finished-at="2020-02-20T17:23:41 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Testwork -->
-      </class> <!-- com.practice.databasetest.AcessDatabase -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectWebElement()[pri:0, instance:com.practice.webelementtest.AllOneWebElementTest@1877ab81]" name="selectWebElement" duration-ms="165" started-at="2020-02-20T17:23:41 IST" finished-at="2020-02-20T17:23:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectWebElement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.practice.webelementtest.AllOneWebElementTest@1877ab81]" name="tearDown" is-config="true" duration-ms="1315" started-at="2020-02-20T17:23:41 IST" finished-at="2020-02-20T17:23:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.practice.webelementtest.AllOneWebElementTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
