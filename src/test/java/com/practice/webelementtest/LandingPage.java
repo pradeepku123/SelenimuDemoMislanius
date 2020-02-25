@@ -1,9 +1,12 @@
 package com.practice.webelementtest;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class LandingPage extends UtilityElement{
 	public LandingPage() {
@@ -21,10 +24,10 @@ public class LandingPage extends UtilityElement{
        	    WebElement city;
        	    @FindBy(xpath="//input[@name='RESULT_TextField-6']")
        	    WebElement email;
-       	    @FindBy(xpath="")
-       	    WebElement gmale;
-       	    @FindBy(xpath="")
-       	    WebElement gfemale;
+       	    @FindBy(xpath="//select[@id='speed']")
+       	    WebElement selectSpeed;
+       	    @FindBy(xpath="//select[@id='multiselect1']")
+       	    WebElement omayaMultiSelection;
        	    @FindBy(xpath="")
        	    WebElement weSun;
        	    @FindBy(xpath="")
@@ -45,4 +48,14 @@ public class LandingPage extends UtilityElement{
        	    public void justClickOperation() {
        	    	UtilityElement.webElementsendKey(Fname, "pradeep");
        	    }
+       	    public List<WebElement> selecttheSpeed(String recText) throws InterruptedException {
+       	    	Select select=new Select(omayaMultiSelection);
+       	    	select.selectByVisibleText(recText);
+       	    	Thread.sleep(1000);
+       	    	select.selectByIndex(3);
+       	    	Thread.sleep(1000);
+       	    	select.deselectByIndex(3);
+       	    	return select.getAllSelectedOptions();
+       	    }
+       	   
 }

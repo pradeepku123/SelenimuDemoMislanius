@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28232" started-at="2020-02-21T01:08:55 IST" finished-at="2020-02-21T01:09:23 IST">
+  <suite name="Default suite" duration-ms="48008" started-at="2020-02-25T15:40:25 IST" finished-at="2020-02-25T15:41:13 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28232" started-at="2020-02-21T01:08:55 IST" finished-at="2020-02-21T01:09:23 IST">
-      <class name="com.practice.webelementtest.AllOneWebElementTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.practice.webelementtest.AllOneWebElementTest@7a1ebcd8]" name="setUp" is-config="true" duration-ms="17263" started-at="2020-02-21T01:08:55 IST" finished-at="2020-02-21T01:09:12 IST">
+    <test name="Default test" duration-ms="48008" started-at="2020-02-25T15:40:25 IST" finished-at="2020-02-25T15:41:13 IST">
+      <class name="com.practtice.collectwebelemrt.Demo">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.practtice.collectwebelemrt.Demo@1877ab81]" name="setup" is-config="true" duration-ms="45215" started-at="2020-02-25T15:40:25 IST" finished-at="2020-02-25T15:41:10 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="selectWebElement()[pri:0, instance:com.practice.webelementtest.AllOneWebElementTest@7a1ebcd8]" name="selectWebElement" duration-ms="515" started-at="2020-02-21T01:09:12 IST" finished-at="2020-02-21T01:09:13 IST">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="test()[pri:0, instance:com.practtice.collectwebelemrt.Demo@1877ab81]" name="test" duration-ms="889" started-at="2020-02-25T15:41:10 IST" finished-at="2020-02-25T15:41:11 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectWebElement -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.practice.webelementtest.AllOneWebElementTest@7a1ebcd8]" name="tearDown" is-config="true" duration-ms="10395" started-at="2020-02-21T01:09:13 IST" finished-at="2020-02-21T01:09:23 IST">
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.practtice.collectwebelemrt.Demo@1877ab81]" name="teardown" is-config="true" duration-ms="1765" started-at="2020-02-25T15:41:11 IST" finished-at="2020-02-25T15:41:13 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.practice.webelementtest.AllOneWebElementTest -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.practtice.collectwebelemrt.Demo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

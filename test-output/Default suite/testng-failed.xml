@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.webelementtest.AllOneWebElementTest">
+      <class name="com.practice.javascript.DemoJavaScript">
         <methods>
-          <include name="selectWebElement"/>
+          <include name="testStart"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.practice.webelementtest.AllOneWebElementTest -->
+      </class> <!-- com.practice.javascript.DemoJavaScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
