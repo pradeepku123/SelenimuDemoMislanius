@@ -1,10 +1,12 @@
 package com.practice.command;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,12 +21,31 @@ public class BrowserCommand {
 	 	public void SetUp() {
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
-			driver.get("http://testautomationpractice.blogspot.com/"); // First get() Browser Commad Executed
+			driver.get("https://stqatools.com/demo/Alerts.php"); // First get() Browser Command Executed
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 			
 		}
 		@Test
+		public void handleAlert() throws InterruptedException {
+			AlertHelper altAlertHelper=new AlertHelper();
+			WebElement alertclick=driver.findElement(By.xpath("//button[@id='btnAlert']"));
+			alertclick.click();
+			Thread.sleep(300);
+			driver.findElement(By.xpath("//button[@class='btn btn-danger']")).click();
+			//driver.switchTo().alert().accept();
+			//altAlertHelper.alertHelperStadStillAccept();
+		}
+		@Test(enabled = false)
+		public void findBorkenLink() {
+			int x=0;
+			List<WebElement> webElementByTag_a = driver.findElements(By.xpath("//a"));
+			for(WebElement tagWebElement:webElementByTag_a) {
+				System.out.println(tagWebElement.getAttribute("href") +"::"+ x);
+				x++;
+			}
+		}
+		@Test(enabled = false)
 		public void browserCommand() throws InterruptedException{
 			String webPageTittle = driver.getTitle(); // Get The Current Title of A Web Browser
 			System.out.println("Title Of The WebPage has::"+ webPageTittle);
@@ -41,8 +62,22 @@ public class BrowserCommand {
 			driver.navigate().refresh();
 			Thread.sleep(5000);
 		}
+		@Test(enabled = false)
+		public void selectClassTest() throws InterruptedException {
+			WebElement selectDate  = driver.findElement(By.cssSelector("#day"));
+			WebElement selectMonth = driver.findElement(By.cssSelector("#month"));
+			WebElement selectYear  = driver.findElement(By.cssSelector("#year"));
+			SelectHelper selectHelper=new SelectHelper();
+			selectDate.click();
+			/*selectHelper.getAllOptions(selectDate);
+			selectHelper.printAllOptionSelectBox();
+			*/
+			selectHelper.selectSelectHelper(selectDate,12);
+			
+		}
 		@AfterMethod
-		public  void tearDown() {
+		public  void tearDown() throws InterruptedException {
+		    Thread.sleep(5000);
 			driver.close();
 		}
 }
