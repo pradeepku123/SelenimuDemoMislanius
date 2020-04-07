@@ -4,10 +4,12 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -21,12 +23,23 @@ public class BrowserCommand {
 	 	public void SetUp() {
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
-			driver.get("https://stqatools.com/demo/Alerts.php"); // First get() Browser Command Executed
+			driver.get("http://testautomationpractice.blogspot.com/"); // First get() Browser Command Executed
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 			
 		}
 		@Test
+		public void javaScriptExecuteDemo() throws InterruptedException {
+			JavascriptExecutor jse=(JavascriptExecutor) driver;
+		 
+		     JavaScriptHelper javaScriptHelper=new JavaScriptHelper();
+		     javaScriptHelper.NavigarteURL(jse);
+//		     javaScriptHelper.AlertPopUp(jse, "HEllo Joyti");
+//		     Thread.sleep(1000);
+//		     driver.switchTo().alert().accept();
+//		     javaScriptHelper.getInnerText(jse); //Not Working
+		}
+		@Test(enabled =false)
 		public void handleAlert() throws InterruptedException {
 			AlertHelper altAlertHelper=new AlertHelper();
 			WebElement alertclick=driver.findElement(By.xpath("//button[@id='btnAlert']"));
@@ -61,6 +74,7 @@ public class BrowserCommand {
 			Thread.sleep(1000);
 			driver.navigate().refresh();
 			Thread.sleep(5000);
+			
 		}
 		@Test(enabled = false)
 		public void selectClassTest() throws InterruptedException {
