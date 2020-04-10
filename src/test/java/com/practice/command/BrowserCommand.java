@@ -1,5 +1,6 @@
 package com.practice.command;
 
+import java.awt.Desktop.Action;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +10,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -28,12 +30,37 @@ public class BrowserCommand {
 			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 			
 		}
-		@Test
+		@Test 
+		public void actionHelper() throws InterruptedException {
+			
+			
+			ActionHelper action =new ActionHelper();
+			Actions actions=new Actions(driver);
+			WebElement webElementGet = driver.findElement(By.cssSelector(".wikipedia-search-button"));
+			driver.findElement(By.cssSelector("#field2")).sendKeys("hello");
+			actions.moveToElement(webElementGet).perform();
+			
+			/* action.moveToTheElements(actions,driver);
+			System.out.println("---Offset Now ---");
+			action.moveToElementByOffSet(actions,driver);
+			System.out.println("Close");
+			*/
+		}
+		@Test(enabled = false)
+		public void getEmailIdOfHr() {
+		   
+		   List<WebElement> emailWebElement = driver.findElements(By.cssSelector(".red-text"));
+		   for(WebElement reciveEmailAddress:emailWebElement) {
+			   System.out.println(reciveEmailAddress.getText());
+			   
+		   }
+		}
+		@Test(enabled = false)
 		public void javaScriptExecuteDemo() throws InterruptedException {
 			JavascriptExecutor jse=(JavascriptExecutor) driver;
 		 
 		     JavaScriptHelper javaScriptHelper=new JavaScriptHelper();
-		     javaScriptHelper.NavigarteURL(jse);
+		     javaScriptHelper.NavigarteURL(jse);//Passed
 //		     javaScriptHelper.AlertPopUp(jse, "HEllo Joyti");
 //		     Thread.sleep(1000);
 //		     driver.switchTo().alert().accept();

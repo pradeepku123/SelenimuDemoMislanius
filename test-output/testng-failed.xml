@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.command.BrowserCommand">
+      <class name="com.practice.command.ActionHelper">
         <methods>
+          <include name="actionHelper"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
-          <include name="javaScriptExecuteDemo"/>
         </methods>
-      </class> <!-- com.practice.command.BrowserCommand -->
+      </class> <!-- com.practice.command.ActionHelper -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
