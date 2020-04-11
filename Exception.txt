@@ -1,0 +1,3 @@
+SesionNOtCreated Exception :-During Action Class API
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Press a button!}

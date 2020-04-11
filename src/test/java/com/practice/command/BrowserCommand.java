@@ -6,11 +6,13 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.sikuli.script.Key;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,20 +27,37 @@ public class BrowserCommand {
 	 	public void SetUp() {
 			WebDriverManager.chromedriver().setup();
 			driver =new ChromeDriver();
-			driver.get("http://testautomationpractice.blogspot.com/"); // First get() Browser Command Executed
+			driver.get("https://www.amazon.in/"); // First get() Browser Command Executed
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 			
 		}
-		@Test 
+		@Test
+		public void testCookies() {
+
+			CookiesUtilityClass.deleteAllcookies(driver);
+			CookiesUtilityClass.createurOwnCookies("i18n-prefs", "INR", driver);
+			CookiesUtilityClass.createurOwnCookies("session-id", "260-9614880-5780307", driver);
+			CookiesUtilityClass.createurOwnCookies("session-id-time", "2082758401l", driver);
+			CookiesUtilityClass.createurOwnCookies("session-token", "uZQ2ghq8taCiET+Fd3sKPu5r2DsLcqeQO0YtpPdM8XW923if1MFyipVADg0fkeRMqw2xEDkDUQMH8XJUXWx8uI4LYVWye+RCqVv3MCoMMuOW8WmBKY+OJ7eoQKpNqx+jfQl96LtqNS4BtBgobd/Uef/Z7Mvq9mrzudzyBhTMuyOQ5GRhUP1kvFVaXBGp0GHZ", driver);
+			CookiesUtilityClass.createurOwnCookies("ubid-acbin", "260-1577206-5667617", driver);
+			CookiesUtilityClass.createurOwnCookies("visitCount", "3", driver);
+			CookiesUtilityClass.createurOwnCookies("x-wl-uid", "1byfjFEfUuEhNGb2BHoP9Cj4AJEnkgZeLSLXSfFNMsqKRJKUlrzBQTCQbaGy/0PnP9EkhwcYPrnw=", driver);
+			CookiesUtilityClass.createurOwnCookies("cdn-session", "AK-765bf62ed949f87f787a346ccb8811bb", driver);
+			CookiesUtilityClass.createurOwnCookies("csm-hit", "tb:s-0SF7E6JHMBYTSV3ZGVMW|1586625927715&t:1586625928279&adb:adblk_yes", driver);
+			CookiesUtilityClass.getAllXookies(driver);
+			driver.navigate().refresh();
+			CookiesUtilityClass.getCookiesDetails();
+		}
+		@Test (enabled = false)
 		public void actionHelper() throws InterruptedException {
 			
 			
-			ActionHelper action =new ActionHelper();
+			//ActionHelper action =new ActionHelper();
 			Actions actions=new Actions(driver);
-			WebElement webElementGet = driver.findElement(By.cssSelector(".wikipedia-search-button"));
-			driver.findElement(By.cssSelector("#field2")).sendKeys("hello");
-			actions.moveToElement(webElementGet).perform();
+			WebElement webElementGet = driver.findElement(By.cssSelector("#field2"));
+			//actions.click(webElementGet).perform();
+			actions.moveToElement(webElementGet).click().keyDown(webElementGet,Key.SHIFT).sendKeys(webElementGet,"pradeep").keyUp(webElementGet,Key.SHIFT).doubleClick(webElementGet).contextClick().build();
 			
 			/* action.moveToTheElements(actions,driver);
 			System.out.println("---Offset Now ---");
@@ -118,7 +137,7 @@ public class BrowserCommand {
 		}
 		@AfterMethod
 		public  void tearDown() throws InterruptedException {
-		    Thread.sleep(5000);
-			driver.close();
+		    Thread.sleep(15000);
+			//driver.close();
 		}
 }

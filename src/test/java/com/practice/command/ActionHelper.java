@@ -7,6 +7,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 public class ActionHelper extends BrowserCommand {
+	
+	public void clickTheElementAndHold(Actions actions ,WebDriver driver) {
+		
+		WebElement webElementGet = driver.findElement(By.xpath("//img[@alt='the peaks of high tatras']"));
+		actions.clickAndHold(webElementGet).build().perform();
+		
+	}
+	
 	public void moveToTheElements(Actions actions ,WebDriver driver) throws InterruptedException {
 		WebElement webElementGet = driver.findElement(By.cssSelector(".wikipedia-search-button"));
 		actions.moveToElement(webElementGet).perform();
@@ -28,6 +36,12 @@ public class ActionHelper extends BrowserCommand {
 		System.out.println(xaxis+"----"+yaxis);
 		Thread.sleep(1000);
 		
+		
+	}
+	public void moveToTheElmentAndClickit(Actions actions,WebDriver driver) {
+		
+		WebElement webElementGet = driver.findElement(By.cssSelector(".wikipedia-search-button"));
+		actions.moveToElement(webElementGet).click().build().perform();
 		
 	}
 

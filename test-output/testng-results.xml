@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48093" started-at="2020-04-09T10:12:53 IST" finished-at="2020-04-09T10:13:41 IST">
+  <suite name="Default suite" duration-ms="38681" started-at="2020-04-12T00:12:01 IST" finished-at="2020-04-12T00:12:39 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48093" started-at="2020-04-09T10:12:53 IST" finished-at="2020-04-09T10:13:41 IST">
+    <test name="Default test" duration-ms="38681" started-at="2020-04-12T00:12:01 IST" finished-at="2020-04-12T00:12:39 IST">
       <class name="com.practice.command.BrowserCommand">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.practice.command.BrowserCommand@1877ab81]" name="SetUp" is-config="true" duration-ms="35007" started-at="2020-04-09T10:12:53 IST" finished-at="2020-04-09T10:13:28 IST">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:com.practice.command.BrowserCommand@458c1321]" name="SetUp" is-config="true" duration-ms="19575" started-at="2020-04-12T00:12:01 IST" finished-at="2020-04-12T00:12:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="actionHelper()[pri:0, instance:com.practice.command.BrowserCommand@1877ab81]" name="actionHelper" duration-ms="2879" started-at="2020-04-09T10:13:28 IST" finished-at="2020-04-09T10:13:31 IST">
+        <test-method status="PASS" signature="testCookies()[pri:0, instance:com.practice.command.BrowserCommand@458c1321]" name="testCookies" duration-ms="3996" started-at="2020-04-12T00:12:20 IST" finished-at="2020-04-12T00:12:24 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- actionHelper -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.practice.command.BrowserCommand@1877ab81]" name="tearDown" is-config="true" duration-ms="10015" started-at="2020-04-09T10:13:31 IST" finished-at="2020-04-09T10:13:41 IST">
+        </test-method> <!-- testCookies -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.practice.command.BrowserCommand@458c1321]" name="tearDown" is-config="true" duration-ms="15002" started-at="2020-04-12T00:12:24 IST" finished-at="2020-04-12T00:12:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
