@@ -12,6 +12,7 @@ public class CookiesUtilityClass {
 	static Set<Cookie> cookiesSet;
 	public static void getAllXookies(WebDriver driver) {
 		cookiesSet = driver.manage().getCookies();
+		//driver.manage().deleteCookieNamed(""); deleter the cookies byv name where deeteCookieNamed Method Take a Argumet Which will be deleted in future
 		
 	}
 	public static void deleteAllcookies(WebDriver driver) {

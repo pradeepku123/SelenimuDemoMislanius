@@ -36,15 +36,19 @@ public class BrowserCommand {
 		public void testCookies() {
 
 			CookiesUtilityClass.deleteAllcookies(driver);
+			CookiesUtilityClass.createurOwnCookies("at-acbin", "Atza|IwEBIDEjiIqN5nT4scmsZwv_KLA0Y-gGaE2NFir8uguRa7qiKxWfsyiP9NR3Fr5Lj9zpPPUMCStyW2j1OmtyMk58NWwVCcLmUtpaTVLGc9E_hZH_LQ5S0Reaoutb0ktoDQ2X5aKPy3Ikaiw8Zj0xMvCmT1lf5pd35WKze_7auRzc3BrRfkZVCymIkUFkHsTNw5aL4W_E0Dcpa_3v-WZ4noxuAo8kKmaZYgOrlQ45lcd2K-j7pXzwZd7magKGUfM2pqsspW4FUBjYePElWmNbrICiJv6sBJJzuIuLbTlOo5c2382gQVoUmTQY6xJLiV2F4DJq7t1XLc7l0VzMNum7TUlLKk4M79a3E-jGqktxIGVUyxV10O-XM4zcDcXZH55Rqlivmw96JIBQ2xKiI6fDTAHzMJvaJRzWRDEa7raQWFFoKagJxVWyPVC4O9TdBNPtORA0V5w", driver);
 			CookiesUtilityClass.createurOwnCookies("i18n-prefs", "INR", driver);
-			CookiesUtilityClass.createurOwnCookies("session-id", "260-9614880-5780307", driver);
+			CookiesUtilityClass.createurOwnCookies("sess-at-acbin", "CEpD9kGTBtIFn3V+c5+iDTeg1BQtEQMin2E1v7sNDwg=", driver);
+			CookiesUtilityClass.createurOwnCookies("session-id", "258-3827534-5017506", driver);
 			CookiesUtilityClass.createurOwnCookies("session-id-time", "2082758401l", driver);
-			CookiesUtilityClass.createurOwnCookies("session-token", "uZQ2ghq8taCiET+Fd3sKPu5r2DsLcqeQO0YtpPdM8XW923if1MFyipVADg0fkeRMqw2xEDkDUQMH8XJUXWx8uI4LYVWye+RCqVv3MCoMMuOW8WmBKY+OJ7eoQKpNqx+jfQl96LtqNS4BtBgobd/Uef/Z7Mvq9mrzudzyBhTMuyOQ5GRhUP1kvFVaXBGp0GHZ", driver);
-			CookiesUtilityClass.createurOwnCookies("ubid-acbin", "260-1577206-5667617", driver);
-			CookiesUtilityClass.createurOwnCookies("visitCount", "3", driver);
-			CookiesUtilityClass.createurOwnCookies("x-wl-uid", "1byfjFEfUuEhNGb2BHoP9Cj4AJEnkgZeLSLXSfFNMsqKRJKUlrzBQTCQbaGy/0PnP9EkhwcYPrnw=", driver);
-			CookiesUtilityClass.createurOwnCookies("cdn-session", "AK-765bf62ed949f87f787a346ccb8811bb", driver);
-			CookiesUtilityClass.createurOwnCookies("csm-hit", "tb:s-0SF7E6JHMBYTSV3ZGVMW|1586625927715&t:1586625928279&adb:adblk_yes", driver);
+			CookiesUtilityClass.createurOwnCookies("session-token", "RTaDxd4WgdytskODLzOHJilNP2f67s7scOY5fZ30XPsAXr4bVZbQZ7B1UsL5OLXltcZ/JtfGeIXOgGHc6KwSDxXcp7P2iQYy5GgE9k4YRArEUr5unB6LyzcENbgtrES3XtWVwwBGH4NsM/VnVtRJB8beqaSQKopUDYm2D7hSMVArHEE86lHu4l2FPihgR6SpIUYLHpwpyKfVlocM6zr9jjhwBhVw3TMIhAWLv9DcPhVRZlmWI6nd2lJh5k/bFI3n+HL+3w0xw65Ca8blBMTFPQ==", driver);
+			CookiesUtilityClass.createurOwnCookies("sst-acbin", "Sst1|PQEzPgZZstP6e1V7Iix69tBBC01Yp0wTWvWhIYcUKCVNbyxrIe-AsvwA_PNFvuHPjIOuMll02KBRuY0-uNMF2D8--JmgQVG-SpbT7YBc8EjCzGLq1XHUTr3PpLbB1mG8AztDfyz2Ip-FiydejYZftT-njaNunbVa64D2B5w7_qx3yTgZBCGhsnotNHHSq5tmta7tL_gyhJwgoRn2u0lYu8E1JgVhQdWEMIPkTAsAaobnDJ16YsC25D5zcwPv7F8njpzS1b-tketD6CU_heqCfK1vh8J9w4Zxfsn_asLp-GISnMLzAIFL1oDSqc6Rd9Ka9qnDVoiOv8cAB9qtl6K5DBlRuA", driver);
+			CookiesUtilityClass.createurOwnCookies("ubid-acbin", "258-4579426-1192953", driver);
+			CookiesUtilityClass.createurOwnCookies("visitCount", "2", driver);
+			CookiesUtilityClass.createurOwnCookies("x-acbin", "rqadCKwHM@2JqY?Zd8q@xqk?CXsfMsxpXf2FVl0qlW1QQ58nqqRGcrOhfWoRbmcO", driver);
+			CookiesUtilityClass.createurOwnCookies("x-wl-uid", "1hOu0/W4SBbyDlsdB2BKwNJ1qdbLsO1TVqIt97NUSZ/4jZc/7C9Hh0VRPLHvW2nol8xgz1MwFtb0QbjMIXszJl/TUiTUNx4jAGUMnS0DvU85COCtEFktq27fRekhI19c2FGX+fwL1APE=", driver);
+			CookiesUtilityClass.createurOwnCookies("cdn-session", "AK-2577ec1bee1cde8d9132366f7486e964", driver);
+			CookiesUtilityClass.createurOwnCookies("csm-hit", "tb:s-32CWKP5K9YCFE7AAJE8F|1586694227422&t:1586694227945&adb:adblk_yes", driver);
 			CookiesUtilityClass.getAllXookies(driver);
 			driver.navigate().refresh();
 			CookiesUtilityClass.getCookiesDetails();

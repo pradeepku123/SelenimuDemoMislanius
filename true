@@ -1,10 +1,161 @@
-1582531826183	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\PRADEEP\\AppData\\Local\\Temp\\rust_mozprofileYr7Nwc"
-1582531829101	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1582531829259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1582531829259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1582531829259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1582531829259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
-JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-[Parent 496, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
-1582531897078	Marionette	INFO	Listening on port 51497
-[Parent 496, Gecko_IOThread] WARNING: file z:/task_1579288126/build/src/ipc/chromium/src/base/process_util_win.cc, line 160
+[1587463567.847][INFO]: Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 33014
+[1587463567.847][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1587463568.580][INFO]: [d57fa36799bea391df0c50656968e0a8] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1587463568.584][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1587463568.585][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1587463568.591][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\PRADEEP\AppData\Local\Temp\scoped_dir13888_1809536463\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\PRADEEP\AppData\Local\Temp\scoped_dir13888_404026719" data:,
+[1587463569.837][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1587463571.852][INFO]: [d57fa36799bea391df0c50656968e0a8] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "81.0.4044.113",
+      "chrome": {
+         "chromedriverVersion": "81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776})",
+         "userDataDir": "C:\\Users\\PRADEEP\\AppData\\Local\\Temp\\scoped_dir13888_404026719"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:55734"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "d57fa36799bea391df0c50656968e0a8"
+}
+[1587463571.942][INFO]: [d57fa36799bea391df0c50656968e0a8] COMMAND Navigate {
+   "url": "http://testautomationpractice.blogspot.com/"
+}
+[1587463571.942][INFO]: Waiting for pending navigations...
+[1587463571.973][INFO]: Done waiting for pending navigations. Status: ok
+[1587463572.452][INFO]: Waiting for pending navigations...
+[1587463572.593][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463572.694][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463572.795][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463572.897][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.036][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.137][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.241][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.342][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.544][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.646][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463573.749][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.115][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.229][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.331][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.433][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.614][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.744][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.858][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463574.977][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463575.129][INFO]: Done waiting for pending navigations. Status: ok
+[1587463575.129][INFO]: [d57fa36799bea391df0c50656968e0a8] RESPONSE Navigate
+[1587463575.146][INFO]: [d57fa36799bea391df0c50656968e0a8] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id='field2']"
+}
+[1587463575.146][INFO]: Waiting for pending navigations...
+[1587463575.147][INFO]: Done waiting for pending navigations. Status: ok
+[1587463575.184][INFO]: Waiting for pending navigations...
+[1587463575.186][INFO]: Done waiting for pending navigations. Status: ok
+[1587463575.186][INFO]: [d57fa36799bea391df0c50656968e0a8] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "04f87220-ee5d-4061-ae79-14f8dda0c253"
+}
+[1587463575.196][INFO]: [d57fa36799bea391df0c50656968e0a8] COMMAND ClickElement {
+   "id": "04f87220-ee5d-4061-ae79-14f8dda0c253"
+}
+[1587463575.196][INFO]: Waiting for pending navigations...
+[1587463575.197][INFO]: Done waiting for pending navigations. Status: ok
+[1587463575.361][INFO]: Waiting for pending navigations...
+[1587463575.363][INFO]: Done waiting for pending navigations. Status: ok
+[1587463575.363][INFO]: [d57fa36799bea391df0c50656968e0a8] RESPONSE ClickElement

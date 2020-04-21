@@ -1,0 +1,165 @@
+[1587463785.967][INFO]: Starting ChromeDriver 81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776}) on port 13492
+[1587463785.967][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1587463786.741][INFO]: [be027527574873b2f9adaad9189bfb95] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1587463786.745][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1587463786.746][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1587463786.774][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\PRADEEP\AppData\Local\Temp\scoped_dir16488_455691482\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\PRADEEP\AppData\Local\Temp\scoped_dir16488_818873896" data:,
+[1587463788.064][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1587463790.078][INFO]: [be027527574873b2f9adaad9189bfb95] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "81.0.4044.113",
+      "chrome": {
+         "chromedriverVersion": "81.0.4044.69 (6813546031a4bc83f717a2ef7cd4ac6ec1199132-refs/branch-heads/4044@{#776})",
+         "userDataDir": "C:\\Users\\PRADEEP\\AppData\\Local\\Temp\\scoped_dir16488_818873896"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:56131"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "be027527574873b2f9adaad9189bfb95"
+}
+[1587463790.150][INFO]: [be027527574873b2f9adaad9189bfb95] COMMAND Navigate {
+   "url": "http://testautomationpractice.blogspot.com/"
+}
+[1587463790.150][INFO]: Waiting for pending navigations...
+[1587463790.153][INFO]: Done waiting for pending navigations. Status: ok
+[1587463791.944][INFO]: Waiting for pending navigations...
+[1587463792.062][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.163][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.435][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.539][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.642][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.744][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.846][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463792.949][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.062][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.163][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.264][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.365][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.634][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.736][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463793.838][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463794.398][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463794.500][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463794.602][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463794.805][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463794.977][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463795.214][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463795.316][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463795.622][SEVERE]: Timed out receiving message from renderer: 0.100
+[1587463795.664][INFO]: Done waiting for pending navigations. Status: ok
+[1587463795.664][INFO]: [be027527574873b2f9adaad9189bfb95] RESPONSE Navigate
+[1587463795.679][INFO]: [be027527574873b2f9adaad9189bfb95] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//*[@id='field2']"
+}
+[1587463795.679][INFO]: Waiting for pending navigations...
+[1587463795.680][INFO]: Done waiting for pending navigations. Status: ok
+[1587463795.707][INFO]: Waiting for pending navigations...
+[1587463795.708][INFO]: Done waiting for pending navigations. Status: ok
+[1587463795.709][INFO]: [be027527574873b2f9adaad9189bfb95] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "a3300f0b-26b8-43e2-9a0f-3f0881bfb726"
+}
+[1587463795.720][INFO]: [be027527574873b2f9adaad9189bfb95] COMMAND ClickElement {
+   "id": "a3300f0b-26b8-43e2-9a0f-3f0881bfb726"
+}
+[1587463795.720][INFO]: Waiting for pending navigations...
+[1587463795.722][INFO]: Done waiting for pending navigations. Status: ok
+[1587463795.797][INFO]: Waiting for pending navigations...
+[1587463795.800][INFO]: Done waiting for pending navigations. Status: ok
+[1587463795.800][INFO]: [be027527574873b2f9adaad9189bfb95] RESPONSE ClickElement
