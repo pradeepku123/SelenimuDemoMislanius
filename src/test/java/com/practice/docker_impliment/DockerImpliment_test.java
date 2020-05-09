@@ -19,7 +19,9 @@ public class DockerImpliment_test {
  	public void SetUp() throws MalformedURLException {
 		WebDriverManager.chromedriver().setup();
 		dc=DesiredCapabilities.chrome();
-		URL url=new URL("http://192.168.99.100:4444/wd/hub");
+		dc.setBrowserName("Chrome");
+		
+		URL url=new URL("http://192.168.56.1:4444/wd/hub");
 		driver=new RemoteWebDriver(url,dc);
 		driver.get("https://www.amazon.in/"); // First get() Browser Command Executed
 		driver.manage().window().maximize();

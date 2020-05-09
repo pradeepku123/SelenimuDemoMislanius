@@ -1,13 +1,17 @@
 package com.practice.EventListnerWithLog4j;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 
-public class WebDriverEventlistner implements WebDriverEventListener {
+import com.mysql.cj.log.Log;
 
+public class WebDriverEventlistner implements WebDriverEventListener {
+	Logger log = LogManager.getLogger(WebDriverEventlistner.class);
 	@Override
 	public void beforeAlertAccept(WebDriver driver) {
 		System.out.println("Before Alert Accepted");
@@ -33,14 +37,16 @@ public class WebDriverEventlistner implements WebDriverEventListener {
 
 	@Override
 	public void beforeNavigateTo(String url, WebDriver driver) {
-		 System.out.println("Before Navigate To");
+	
+		System.out.println("Before Navigate To");
+		log.info("Hello");
 		
 	}
 
 	@Override
 	public void afterNavigateTo(String url, WebDriver driver) {
 		 System.out.println("Afer Navivigable");
-		
+		 log.info("Yes it after");
 	}
 
 	@Override

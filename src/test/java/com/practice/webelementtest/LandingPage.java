@@ -2,6 +2,7 @@ package com.practice.webelementtest;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,6 +45,7 @@ public class LandingPage extends UtilityElement{
 			WebElement weSat;
        	    @FindBy(xpath="//input[@id='field2']")
 			WebElement Temp;
+       	  
        	    
        	    public void justClickOperation() {
        	    	UtilityElement.webElementsendKey(Fname, "pradeep");

@@ -1,5 +1,7 @@
 package com.practice.webelementtest;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +18,7 @@ public class UtilityElement {
 		
 		WebDriverWait wait=new WebDriverWait(driver,30);
 		wait.until(ExpectedConditions.elementToBeClickable(webelement));
+		List<WebElement> book = driver.findElements(By.cssSelector("#hello"));
 	}
 		public static void waitElementVisible(WebDriver driver,WebElement webelement) {
 		

@@ -1,0 +1,51 @@
+2020-05-04 16:43:17 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:43:17 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:43:17 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:49:11 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:49:11 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:49:11 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:49:13 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:49:13 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:49:13 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:50:44 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:50:44 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:50:44 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:50:44 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:52:37 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:52:37 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:52:37 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:53:21 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:53:21 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:53:21 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:59:19 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:59:19 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:59:19 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 16:59:19 [INFO ] [LogForJDemo] - [main] hello
+2020-05-04 16:59:19 [WARN ] [LogForJDemo] - [main] yes its log
+2020-05-04 16:59:19 [FATAL] [LogForJDemo] - [main] Yes
+2020-05-04 17:03:05 [INFO ] [EventListner] - [voidSetUp] hello
+2020-05-04 17:03:05 [INFO ] [EventListner] - [voidSetUp] Logging start
+2020-05-04 17:03:05 [INFO ] [EventListner] - [TestProcess] Logging start
+2020-05-04 17:03:20 [INFO ] [EventListner] - [tearDown] Browser Close
+2020-05-04 17:05:18 [INFO ] [EventListner] - [voidSetUp] hello
+2020-05-04 17:05:18 [INFO ] [EventListner] - [voidSetUp] Logging start
+2020-05-04 17:05:18 [INFO ] [EventListner] - [TestProcess] Logging start
+2020-05-04 17:05:19 [INFO ] [EventListner] - [tearDown] Browser Close
+2020-05-04 17:10:11 [INFO ] [EventListner] - [voidSetUp] hello
+2020-05-04 17:10:12 [INFO ] [EventListner] - [voidSetUp] Logging start
+2020-05-04 17:10:12 [INFO ] [EventListner] - [TestProcess] Logging start
+2020-05-04 17:10:17 [INFO ] [EventListner] - [tearDown] Browser Close
+2020-05-04 17:10:24 [INFO ] [EventListner] - [voidSetUp] hello
+2020-05-04 17:10:24 [INFO ] [EventListner] - [voidSetUp] Logging start
+2020-05-04 17:10:24 [INFO ] [EventListner] - [TestProcess] Logging start
+2020-05-04 17:10:27 [INFO ] [EventListner] - [tearDown] Browser Close
+2020-05-04 17:14:32 [INFO ] [EventListner] - [voidSetUp] hello
+2020-05-04 17:14:32 [INFO ] [EventListner] - [voidSetUp] Logging start
+2020-05-04 17:14:32 [INFO ] [EventListner] - [TestProcess] Logging start
+2020-05-04 17:14:33 [INFO ] [EventListner] - [tearDown] Browser Close
+2020-05-04 17:15:25 [INFO ] [WebDriverEventlistner] - [beforeNavigateTo] Hello
+2020-05-04 17:15:29 [INFO ] [WebDriverEventlistner] - [afterNavigateTo] Yes it after
+2020-05-04 17:15:32 [INFO ] [EventListner] - [voidSetUp] hello
+2020-05-04 17:15:32 [INFO ] [EventListner] - [voidSetUp] Logging start
+2020-05-04 17:15:32 [INFO ] [EventListner] - [TestProcess] Logging start
+2020-05-04 17:15:33 [INFO ] [EventListner] - [tearDown] Browser Close

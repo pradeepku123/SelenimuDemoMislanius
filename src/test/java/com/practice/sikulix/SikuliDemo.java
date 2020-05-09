@@ -31,8 +31,8 @@ public class SikuliDemo {
 		screen.type(password,"udAhydy");
 		
 		Actions action=new Actions(driver);
-		action.sendKeys(Key.TAB).perform();;
-		action.sendKeys(Keys.ENTER).perform();;
+		action.sendKeys(Key.TAB).perform();
+		action.sendKeys(Keys.ENTER).perform();
 		
 		/*Robot robot=new Robot();
 		robot.keyPress(KeyEvent.VK_TAB);

@@ -1,3 +1,4 @@
 SesionNOtCreated Exception :-During Action Class API
 org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
 org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Press a button!}
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="javascript:void(0);" class="btn btn-warning text-uppercase ml-sm-auto m-0" id="lang_change">...</a> is not clickable at point (1270, 48). Other element would receive the click: <div class="modal fade in show" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="padding-right: 16px; display: block;" aria-modal="true">...</div>
