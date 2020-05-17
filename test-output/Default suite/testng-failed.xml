@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.practice.command.BrowserCommand">
+      <class name="com.practice.datapicker.BaseTest">
         <methods>
-          <include name="SetUp"/>
+          <include name="selectGivenDate"/>
+          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testCookies"/>
         </methods>
-      </class> <!-- com.practice.command.BrowserCommand -->
+      </class> <!-- com.practice.datapicker.BaseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
